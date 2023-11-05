@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nav_choyon.css" />
+    <title>home</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header starts -->
+      <header>
+        <!-- Nav bars -->
+        <div class="navcontainer">
+          <nav>
+            <div class="logo">NovoMyth</div>
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Write</a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Get Started</a></li>
+            </ul>
+            <div class="threeline">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!--header ends  -->
+
+      <!-- main starts -->
+      <main>
+        <div class="Homecontainer">
+          <div class="left">
+            <h2>Welcome to</h2>
+            <h1>NovoMyth</h1>
+
+            <p><span id="element"></span></p>
+
+            <a href="#" class="explore-button">Start Exploring</a>
+          </div>
+          <!-- <div class="right">
+                  <img src="images/NovoMythLogo.jpg" alt="Image">
+                </div> -->
+        </div>
+      </main>
+
+      <!-- main ends -->
+
+     
+    </div>
+
+    <!-- nav bars end -->
+
+    <script src="js/nav_choyon.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      function startTypedLoop() {
+        var typed = new Typed("#element", {
+          strings: ["Discover, Discuss, and Dive into Stories with Us."],
+          typeSpeed: 50,
+          onComplete: function () {
+            // Clear the element after typing is complete
+            typed.destroy();
+            setTimeout(startTypedLoop, 1200); // Wait for 1 second and start the loop again
+          },
+        });
+      }
+
+      startTypedLoop();
+    </script>
+  </body>
+</html>
