@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="images/NovoMythLogo.jpg" type="image/png">
+   <title>Login - NovoMyth</title>
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+   <link rel="stylesheet" href="css/home.css"> <!-- Link to the same CSS file as the home page -->
+   <link rel="stylesheet" href="css/form.css"> <!-- New CSS file for the login page -->
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="navcontainer">
+            <nav>
+                <div class="logo">NovoMyth</div>
+                <ul class="nav-links">
+                    <li><a href="home1.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="write.html">Write</a></li>
+                    <li><a href="login.html">Sign In</a></li>
+                    <li><a href="registration.html">Get Started</a></li>
+
+                </ul>
+                <div class="threeline">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </nav>
+            </div>
+        </header>
+</div>
+
+<div class="form-container">
+   <form action="insights.html" method="post" id="loginForm">
+      <input type="email" name="email" required placeholder="Enter your email">
+      <input type="password" name="password" required placeholder="Enter your password">
+      <input type="submit" name="submit" value="Login Now" class="form-btn">
+      <p>Don't have an account? <a href="registration.html">Register now</a></p>
+   </form>
+</div>
+
+<script>
+   document.getElementById("loginForm").addEventListener("submit", function(event) {
+       // Prevent the default form submission
+       event.preventDefault();
+       //logic will be added while working on the backend for checking valid login
+       // Simulate a successful login
+       var isValid = true;
+
+       if (isValid) {
+           // If login is successful, redirect to insights.html
+           window.location.href = "insights.html";
+       }
+   });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #9197d7, #08093f); /* Same background as home page */
+}
+
+/* image up section starts */
+#update {
+    display: none;
+}
+
+.imgdiv {
+    height: 30vh;
+    width: 60vh;
+    padding: 20px;
+}
+
+.imgdiv img {
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.image-icon {
+    background: #17978f;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+}
+/* image up section ends */
+
+/* Blog Submission Form Styles */
+.write-form {
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #9197d7, #08093f); /* Same gradient background as home page */
+    padding-top: 20px;
+    padding-bottom: 115px;
+    border-radius: 10px;
+}
+.write-form h3 {
+    
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(219, 213, 213);
+    /* position: relative; */
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.write-form form {
+    text-align: left;
+    max-width: 600px; /* Limit the form width for better readability */
+}
+
+.write-form label {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.write-form input,
+.write-form textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin: 8px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #088178; /* Add a simple underline effect */
+    outline: none;
+    color: white;
+}
+
+.write-form .form-btn {
+    background: #088178;
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.write-form .form-btn:hover {
+    background: #17978f;
+}
+
+/* Center the placeholders */
+.write-form input::placeholder,
+.write-form textarea::placeholder {
+    text-align: left;
+    padding: 0;
+    color: beige;
+    opacity: 0.8;
+}
+
+/* Add styles for the image upload box */
+.image-upload-box {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-drop-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dashed #088178;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: border 0.3s;
+}
+
+.image-drop-box img {
+    max-width: 100px;
+    height: auto;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.image-drop-box p {
+    margin: 0;
+}
+
+.image-drop-box:hover {
+    border: 2px dashed #17978f;
+}
+
+.image-drop-box img:hover {
+    transform: scale(1.1);
+}
+#imagePreview {
+    width: 80px; /* Set your desired width */
+    height: 50px; /* Set your desired height */
+}
+

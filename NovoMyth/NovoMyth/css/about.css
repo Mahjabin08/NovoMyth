@@ -1,0 +1,81 @@
+/* about.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #9197d7, #08093f);
+}
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* About Us page specific styles */
+.about-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #9197d7, #08093f);
+}
+
+.text-container {
+    /* background: rgba(144, 186, 192, 0.5); */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left; /* Align text to the left */
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(82, 129, 129, 0.2);
+}
+.text-container h1{
+    /* font-family: 'Parkavenue', cursive; */
+    font-family: 'Roboto', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+
+  .text-container p{
+    padding-top:35px;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(219, 213, 213);
+    /* animation: slideDown 2s ease; */
+  }
+
+
+
+
+/* Additional style for the image container */
+/* Additional style for the image container */
+.image-container {
+    text-align: right;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 300px;
+    max-height: 580px; /* Adjust the maximum height as needed */
+    height: auto;
+    animation: slideDown 2s ease; /* Apply the slideDown animation */
+}

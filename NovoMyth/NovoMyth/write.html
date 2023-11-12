@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/insights.css">
+    <link rel="stylesheet" href="css/write.css">
+    <link rel="icon" href="images/NovoMythLogo.jpg" type="image/png">
+    <title>NovoMyth-Write</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar (same as home page) -->
+        <nav>
+            <div class="logo">NovoMyth</div>
+            <ul class="nav-links">
+                <li><a href="home1.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="write.html">Write</a></li>
+                <li class="profile-dropdown">
+                    <a href="#" id="profile-icon">
+                        <img src="images/profile.jpg" alt="Your Profile" class="profile-icon">
+                    </a>
+                    <div class="dropdown-content" id="profile-dropdown-content">
+                        <a href="profile.html">Your Profile</a>
+                        <a href="settings.html">Settings</a>
+                        <a href="logout.html">Log Out</a>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="threeline">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+    </header>
+
+    <div class="write-form">
+        <h3>Submit your blog sharing you thoughts - about a book you have found thought provoking <br> with your preferred title, and image. Best Wishes!</h3>
+        <form action="#" method="post">
+            <div class="image-upload-box">
+                <label for="imageUpload" class="image-drop-box" id="imageDropBox">
+                    <img src="images/gallery.svg" alt="Upload Image">
+                    <p>Click to add your blog thumbnail</p>
+                </label>
+                <input type="file" id="imageUpload" name="imageUpload" accept="image/*" style="display: none">
+            </div>
+    
+            <!-- Image Preview -->
+            <div class="image-preview">
+                <img id="imagePreview" src="" alt="Image Preview">
+            </div>
+    
+            <input type="text" id="bookName" name="bookName" required placeholder="Book Name">
+            <input type="text" id="bookAuthor" name="bookAuthor" required placeholder="Book Author">
+            
+            <input type="text" id="blogTitle" name="blogTitle" required placeholder="Blog Title">
+            <!-- <textarea id="yourThoughts" name="yourThoughts" required placeholder="Your Thoughts"></textarea> -->
+            <!-- <input type="file" id="imageUpload" name="imageUpload" accept="image/*" style="display:none"> -->
+            <textarea id="post" name="post" required placeholder="Write Post From Here ..."  autocomplete="off"></textarea>
+            
+            <input type="submit" name="submit" value="Submit" class="form-btn">
+        </form>
+    </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/write.js"></script>
+
+</body>
+
+</html>

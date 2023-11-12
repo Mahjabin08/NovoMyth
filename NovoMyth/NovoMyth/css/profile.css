@@ -1,0 +1,39 @@
+/* Styling for the dropdown menu */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-content li {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Show the dropdown menu on hover */
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style links in the dropdown menu */
+.dropdown-content a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change link color on hover */
+.dropdown-content a:hover {
+    background-color: #088178;
+    color: #fff;
+}
